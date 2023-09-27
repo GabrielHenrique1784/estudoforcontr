@@ -5,12 +5,16 @@
     Faça um programa que leia 5 números e informe a soma e média dos números.
     */
 
-    //ENTRADA
+    let soma = 0;
 
 
-    //PROCESSAMENTO
+    for (let i = 1; i <= 5; i++) {
 
+        let num = Number(prompt("Insira um número:"))
+        
+        soma += num
+    }
 
-    //SAÍDA
+    alert(`Soma dos números: ${soma} Média: ${(soma / 5)}`);
 
 </script>

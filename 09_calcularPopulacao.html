@@ -4,13 +4,15 @@
     PROBLEMA
     Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
     */
+    let habitantes = 50000;
 
-    //ENTRADA
+    for (let anos = 1; anos <= 10; anos++) {
+        habitantes = habitantes * 1.015;
+        if (anos == 5)
+            alert(`A quantidade de habitantes após 5 anos será de ${habitantes}`)
+    }
 
-    
-    //PROCESSAMENTO
-    
+    alert(`A quantidade de habitantes após 10 anos será de ${habitantes}`)
 
-    //SAÍDA
 
 </script>

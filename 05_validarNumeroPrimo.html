@@ -4,13 +4,20 @@
     PROBLEMA
     Faça um programa que peça para o usuário informar um número. Identifique se o número fornecido pelo usuário é um número primo e apresente na tela.
     */
+    let num = parseFloat(prompt("Insira um número:"));
 
-    //ENTRADA
+    let primo = 0;
+    for (let i = 1; i <= num; i++) {
+        if (num % i == 0) {
+            primo++;
+        }
+    }
+    if (primo <= 2)
+     {
+        alert(`O número é primo`);
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    } else 
+    {
+        alert(`O número não é primo`);
+    }
 </script>

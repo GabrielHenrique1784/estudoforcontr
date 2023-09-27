@@ -9,12 +9,16 @@
     **Apresente apenas letras minúsculas!
     */
 
-    //ENTRADA
 
-    
-    //PROCESSAMENTO
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let F = [];
 
-    
-    //SAÍDA
+    for (let i = 0; i < listaDeLetras.length; i++) {
+        const letra = listaDeLetras[i];
+        if (!F.includes(letra.toLowerCase()) && !F.includes(letra.toUpperCase())) {
+            F.push(letra.toLowerCase());
+        }
+    }
+    alert(`As letras que repetem são: ` + F);
 
 </script>

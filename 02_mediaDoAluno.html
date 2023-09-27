@@ -6,12 +6,14 @@
     Calcule a média das notas e apresente o resultado na tela.
     */
 
-    //ENTRADA
-    
+    let numNotas = Number(prompt(`Insira a quantidade de notas que o aluno obteve:`));
 
-    //PROCESSAMENTO
-    
+    let notasF = 0;
+    for (let i = 0; i < numNotas; i++) {
+        let nota = Number(prompt(`Qual a ${i + 1}ª nota que o aluno obteve?`));
+        notasF = notasF + nota;
+    }
 
-    //SAÍDA
+    alert(`A média das notas inseridas é ${(notasF / numNotas)}`);
 
 </script>
